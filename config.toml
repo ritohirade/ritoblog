@@ -2,3 +2,19 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "電脳ブログ"
 theme = "chunky-poster"
+
+[params]
+  homepageImage = "homepage-image.jpg"
+  description = "コンピュータシステムからデザインまで"
+
+[menu]
+  [[menu.global]]
+    identifier = ""
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.global]]
+    identifier = "about"
+    name = "About"
+    url = "/page/about"
+    weight = 2
