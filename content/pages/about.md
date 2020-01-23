@@ -5,6 +5,9 @@ draft: true
 url: "/about"
 ---
 
+{{< figure src="/images/rito.png" class="center" width="320" height="640" >}}
+
+
 フリーランスデザインエンジニア。電脳事務所代表。青山学院大学在学中の19歳。今はバンコクに留学中です。
 DMM WEBCAMPでのメンターのほか、デザインやライティングなどのインターンやアルバイトを経験。
 
