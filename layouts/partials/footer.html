@@ -1,0 +1,92 @@
+<footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- <ul class="list-inline">
+                    {{ if .Site.Params.social.rss -}}
+                    <li class="list-inline-item">
+                        {{- with .Site.GetPage "" -}}
+                            {{- with .OutputFormats.Get "RSS" -}}
+                                <a href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            {{- end -}}
+                        {{- end -}}
+                    </li>
+                    {{- end -}}
+                    {{- if .Site.Params.social.email -}}
+                    <li class="list-inline-item">
+                        <a href="mailto://{{ .Site.Params.social.email }}" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {{- end -}}
+                    {{- range $name, $path := .Site.Params.social -}}
+                        {{- if and $path (not (in (slice "rss" "email") $name)) -}}
+                        <li>
+                            <a href="https://twitter.com/ritohirade" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        {{- end -}}
+                    {{- end }}
+                </ul> -->
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href="https://twitter.com/ritohirade" class="icons d-block">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.facebook.com/hiraderito" class="icons d-block">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://github.com/ritohirade" class="icons d-block">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.behance.net/rittonboy88130" class="icons d-block">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-behance-square fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                  </li>
+
+                </ul>
+                <p class="text-muted">
+                    {{ if .Site.Copyright }}
+                        {{ .Site.Copyright | safeHTML }}
+                    {{ else }}
+                        Copyright &copy; {{ .Site.Title }} {{ now.Year }}
+                    {{ end }}
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
