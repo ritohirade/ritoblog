@@ -1,20 +1,26 @@
 ---
 title: "Figmaのおすすめプラグイン18選"
 date: 2020-01-28T18:52:05+07:00
-images: [images/figmaplugin.png]
+images: [images/pc.jpg]
 categories: [デザイン]
 tags: [figma, デザイン]
 authors: []
 ---
-![a](/images/pc.jpg)
+
+デザイナーに大人気のデザインツールであるfigmaのプラグインを紹介していきます。
+
+<!--more-->
 
 ### プラグインをインストールする方法
 
 figmaでプラグインをインストールするのはとても簡単です。
 figmaにサインアップしたのち、左上のメニューの中のPluginをクリックします。
-![a](/images/figma1.jpg)
+
+{{< figure src="/images/figma1.jpg" class="center" width="640" height="1280" >}}
+
 そのあと、Browse all pluginsをクリックすると、下のような画面が出るので、↓Installと書いてあるボタンをクリックすることでインストールできます。  
 
+{{< figure src="/images/figma2.png" class="center" width="640" height="1280" >}}
 
 ### おすすめプラグイン
 

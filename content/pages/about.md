@@ -8,9 +8,9 @@ url: "/about"
 {{< figure src="/images/rito.png" class="center" width="320" height="640" >}}
 
 フリーランスデザインエンジニア。電脳事務所代表。青山学院大学在学中の19歳。今はバンコクに留学中です。
-DMM WEBCAMPでのメンターのほか、デザインやライティングなどのインターンやアルバイトを経験。
+プログラミングスクールでのメンターのほか、デザインやライティングなどのインターンやアルバイトを経験。
 
-使用言語は、Ruby on Rails, Vue.js, Nuxt.js
+使用言語は、Ruby on Rails, Vue.js, Nuxt.js  
 デザインで使用経験があるツールは、Photoshop, AdobeXD, Illustrator, figma
 
 このブログでは、プログラミング, デザイン, 基本情報技術者試験程度のコンピュータシステムについて書いていこうと思います。
