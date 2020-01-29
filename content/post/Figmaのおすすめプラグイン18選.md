@@ -7,7 +7,8 @@ tags: [figma, デザイン]
 authors: []
 ---
 
-デザイナーに大人気のデザインツールであるfigmaのプラグインを紹介していきます。
+デザイナーに大人気のデザインツールであるfigmaのプラグインを紹介していきます。  
+
 
 <!--more-->
 
@@ -20,7 +21,9 @@ figmaにサインアップしたのち、左上のメニューの中のPluginを
 
 そのあと、Browse all pluginsをクリックすると、下のような画面が出るので、↓Installと書いてあるボタンをクリックすることでインストールできます。  
 
-{{< figure src="/images/figma2.png" class="center" width="640" height="1280" >}}
+{{< figure src="/images/figma2.png" class="center" width="640" height="1280" >}}  
+
+
 
 ### おすすめプラグイン
 
