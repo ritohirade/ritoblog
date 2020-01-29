@@ -14,7 +14,7 @@ theme = "chunky-poster"
     url = "/"
     weight = 1
   [[menu.global]]
-    identifier = "layouts/about.html"
+    identifier = ""
     name = "About"
     url = "/about"
     weight = 2
