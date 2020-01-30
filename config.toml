@@ -6,6 +6,7 @@ theme = "chunky-poster"
 [params]
   homepageImage = "homepage-image.jpg"
   description = "コンピュータシステムからデザインまで"
+  images = "pc.png"
 
 [menu]
   [[menu.global]]
