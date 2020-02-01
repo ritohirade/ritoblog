@@ -1,10 +1,10 @@
-baseURL = "http://dennoblog.com/"
+baseURL = "https://dennoblog.com/"
 languageCode = "en-us"
 title = "電脳ブログ"
 theme = "chunky-poster"
 
 [params]
-  homepageImage = "homepage-image.jpg"
+  homepageImage = "/images/homepage-image.jpg"
   description = "コンピュータシステムからデザインまで"
   images = "pc.png"
 
