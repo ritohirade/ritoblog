@@ -9,16 +9,16 @@ theme = "chunky-poster"
   images = "pc.png"
 
 [menu]
-  [[menu.global]]
-    identifier = ""
+  [[menu.main]]
+    identifier = "home"
     name = "Home"
     url = "/"
-    weight = 1
-  [[menu.global]]
-    identifier = ""
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
     name = "About"
-    url = "/about"
-    weight = 2
+    url = "/about/"
+    weight = 0
 
 hasCJKLanguage = true
 summaryLength = 1
