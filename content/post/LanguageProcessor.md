@@ -1,7 +1,7 @@
 ---
 title: "言語プロセッサについてまとめてみた"
 date: 2020-01-30T19:09:53+07:00
-images: ["office.jpg"]
+images: ["/images/office.jpg"]
 categories: [コンピュータシステム]
 tags: [コンピュータシステム, 基本情報技術者試験]
 authors: []
