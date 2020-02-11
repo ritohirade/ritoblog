@@ -1,7 +1,7 @@
 ---
 title: "Figmaのおすすめプラグイン18選"
 date: 2020-01-28T18:52:05+07:00
-images: ["images/student.jpg"]
+images: ["student.jpg"]
 categories: [デザイン]
 tags: [figma, デザイン]
 authors: []
