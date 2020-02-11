@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>電脳ブログ</title>
+    <link>https://dennoblog.com/</link>
+    <description>Recent content on 電脳ブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jan 2020 19:09:53 +0700</lastBuildDate>
+    
+	<atom:link href="https://dennoblog.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>言語プロセッサについてまとめてみた</title>
+      <link>https://dennoblog.com/post/languageprocessor/</link>
+      <pubDate>Thu, 30 Jan 2020 19:09:53 +0700</pubDate>
+      
+      <guid>https://dennoblog.com/post/languageprocessor/</guid>
+      <description>&lt;p&gt;皆さんは自分の書いた言語をプログラミング言語がどのようにコンピュータに命令を送っているのか知っていますか？
+その鍵を握るのが今回説明する言語プロセッサです。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Figmaのおすすめプラグイン18選</title>
+      <link>https://dennoblog.com/post/figmarecommendedplugin18/</link>
+      <pubDate>Tue, 28 Jan 2020 18:52:05 +0700</pubDate>
+      
+      <guid>https://dennoblog.com/post/figmarecommendedplugin18/</guid>
+      <description>&lt;p&gt;デザイナーに大人気のデザインツールである figma のプラグインを紹介していきます。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://dennoblog.com/about/</link>
+      <pubDate>Thu, 23 Jan 2020 20:43:38 +0700</pubDate>
+      
+      <guid>https://dennoblog.com/about/</guid>
+      <description>フリーランスデザインエンジニア。電脳事務所代表。青山学院大学在学中の 19 歳。現在バンコクに留学中。 プログラミングスクールでのメンターのほか、デザインやライティングなどのインターンやアルバイトを経験。
+使用言語は、Ruby on Rails, Vue.js, Nuxt.js
+デザインで使用経験があるツールは、Photoshop, AdobeXD, Illustrator, figma
+趣味は旅行とインテリア。
+Twitter もやっているので是非フォローお願いします。</description>
+    </item>
+    
+  </channel>
+</rss>

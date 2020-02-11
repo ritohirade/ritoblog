@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>電脳ブログ</title><meta name="description" content="コンピュータシステムからデザインまで"><meta name="author" content="">
+
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+<link rel="canonical" href="https://dennoblog.com/post/languageprocessor/"><link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon"><meta property="og:title" content="言語プロセッサについてまとめてみた" />
+<meta property="og:description" content="皆さんは自分の書いた言語をプログラミング言語がどのようにコンピュータに命令を送っているのか知っていますか？
+その鍵を握るのが今回説明する言語プロセッサです。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dennoblog.com/post/languageprocessor/" />
+<meta property="og:image" content="https://dennoblog.com/images/office.jpg" />
+<meta property="article:published_time" content="2020-01-30T19:09:53+07:00" />
+<meta property="article:modified_time" content="2020-01-30T19:09:53+07:00" />
+<meta itemprop="name" content="言語プロセッサについてまとめてみた">
+<meta itemprop="description" content="皆さんは自分の書いた言語をプログラミング言語がどのようにコンピュータに命令を送っているのか知っていますか？
+その鍵を握るのが今回説明する言語プロセッサです。">
+<meta itemprop="datePublished" content="2020-01-30T19:09:53&#43;07:00" />
+<meta itemprop="dateModified" content="2020-01-30T19:09:53&#43;07:00" />
+<meta itemprop="wordCount" content="47">
+<meta itemprop="image" content="https://dennoblog.com/images/office.jpg">
+
+
+
+<meta itemprop="keywords" content="コンピュータシステム,基本情報技術者試験," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dennoblog.com/images/office.jpg"/>
+
+<meta name="twitter:title" content="言語プロセッサについてまとめてみた"/>
+<meta name="twitter:description" content="皆さんは自分の書いた言語をプログラミング言語がどのようにコンピュータに命令を送っているのか知っていますか？
+その鍵を握るのが今回説明する言語プロセッサです。"/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://dennoblog.com/">電脳ブログ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+            
+            
+              <li>
+                <a class="menu" href="/" style="padding-right: 40px;">
+                  Home
+                </a>
+              </li>
+            
+              <li>
+                <a class="menu" href="/about" style="padding-right: 40px;">
+                  About
+                </a>
+              </li>
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">January 30, 2020</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>47 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>1 min read</span>
+                        </div>
+
+                        <h1>言語プロセッサについてまとめてみた</h1>
+
+                        
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8"><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0">
+                                  <i class="fas fa-tag mr-2"></i>コンピュータシステム
+                              </a><a class="badge badge-pill badge-light border mr-2" href="/tags/%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1%E6%8A%80%E8%A1%93%E8%80%85%E8%A9%A6%E9%A8%93">
+                                  <i class="fas fa-tag mr-2"></i>基本情報技術者試験
+                              </a></div><ul class="share nav my-3 justify-content-end">
+                          <li class="nav-item">
+                              <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fdennoblog.com%2fpost%2flanguageprocessor%2f&text=%e8%a8%80%e8%aa%9e%e3%83%97%e3%83%ad%e3%82%bb%e3%83%83%e3%82%b5%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6%e3%81%be%e3%81%a8%e3%82%81%e3%81%a6%e3%81%bf%e3%81%9f">
+                                <i class="fa-fw fab fa-twitter"></i>
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fdennoblog.com%2fpost%2flanguageprocessor%2f&title=%e8%a8%80%e8%aa%9e%e3%83%97%e3%83%ad%e3%82%bb%e3%83%83%e3%82%b5%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6%e3%81%be%e3%81%a8%e3%82%81%e3%81%a6%e3%81%bf%e3%81%9f">
+                                  <i class="fa-fw fab fa-linkedin-in"></i>
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennoblog.com%2fpost%2flanguageprocessor%2f&t=%e8%a8%80%e8%aa%9e%e3%83%97%e3%83%ad%e3%82%bb%e3%83%83%e3%82%b5%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6%e3%81%be%e3%81%a8%e3%82%81%e3%81%a6%e3%81%bf%e3%81%9f">
+                                  <i class="fa-fw fab fa-facebook-f"></i>
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fdennoblog.com%2fpost%2flanguageprocessor%2f&title=%e8%a8%80%e8%aa%9e%e3%83%97%e3%83%ad%e3%82%bb%e3%83%83%e3%82%b5%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6%e3%81%be%e3%81%a8%e3%82%81%e3%81%a6%e3%81%bf%e3%81%9f">
+                                  <i class="fa-fw fab fa-reddit-alien"></i>
+                              </a>
+                          </li>
+                      </ul>
+                        <div class="content">
+                            <p>皆さんは自分の書いた言語をプログラミング言語がどのようにコンピュータに命令を送っているのか知っていますか？
+その鍵を握るのが今回説明する言語プロセッサです。</p>
+<blockquote>
+<h3 id="言語プロセッサとは">言語プロセッサとは</h3>
+</blockquote>
+<p>言語プロセッサとは、人間が書くプログラミング言語（原始プログラム）をコンピュータが実行できる機械語（目的プログラム）に変換することです。<br>
+また、その機械語を実行可能状態にするにはリンカと呼ばれる工程が必要になります。</p>
+<p>プログラミング言語は二種類あります。</p>
+<ul>
+<li>コンピュータが理解しやすい低水準言語</li>
+<li>人間が理解しやすい高水準言語</li>
+</ul>
+<p>機械語とは、0 と 1 で表される言語です。</p>
+<blockquote>
+<h3 id="言語プロセッサの種類">言語プロセッサの種類</h3>
+</blockquote>
+<ul>
+<li>
+<p><strong>アセンブラ</strong><br>
+アセンブラ言語を機械語命令に翻訳するプロセッサです。アセンブラ言語とは、ほぼ機械語に直接対応するレベルのプログラムを人間が読み書きできるようにしたもので、低水準言語の一つです。アセンブラ言語の一命令が、機械語の一命令となります。</p>
+</li>
+<li>
+<p><strong>コンパイラ</strong>
+C 言語や、Java などの高水準言語の原始プログラムを目的プログラムに翻訳するプロセッサです。また、ソースコードのプログラムを一度まとめてから機械語に翻訳するので効率がいいです。コンパイラルの多くは、プログラムの実行を高速化する最適化機能（オプティマイズ）があります。
+開発をしているとコンパイルエラーというエラーが出てしまった経験がある方もいるのではないでしょうか。そのエラーはこれを実行する時のエラーです。</p>
+</li>
+<li>
+<p><strong>インタプリタ</strong><br>
+インタプリタも、高水準言語で記述された原始プログラムを目的プログラムに翻訳するプロセッサですが、コンパイラと違うのは命令を一つ一つ実行していくことです。なので金毘羅に比べて翻訳時間は長くなります。例として PHP や Perl, JavaScript が挙げられます。</p>
+</li>
+<li>
+<p><strong>ジェネレータ</strong><br>
+ジェネレータとは、RPG に代表される方式で、パラメータを設定することでプログラムを生成してくれます。</p>
+</li>
+</ul>
+<blockquote>
+<h3 id="コンパイラによる実行工程">コンパイラによる実行工程</h3>
+</blockquote>
+<ol>
+<li>
+<p><strong>字句解析</strong><br>
+　ソースプログラムを一文字ずつトークン（字句）ごとに分解します。</p>
+</li>
+<li>
+<p><strong>構文解析</strong><br>
+　トークンが言語の仕様に反していないかをチェックします。</p>
+</li>
+<li>
+<p><strong>意味解析</strong><br>
+　プログラムの手続きの矛盾をチェックします</p>
+</li>
+<li>
+<p><strong>コード最適化</strong><br>
+　実行スピードを早くするためにコードサイズを小さくしたり、論理式の最適化を行ったりします。</p>
+</li>
+<li>
+<p><strong>コード生成</strong><br>
+　機械語に変換します。</p>
+</li>
+</ol>
+<blockquote>
+<h3 id="まとめ">まとめ</h3>
+</blockquote>
+<p>このように人間が書いたプログラムはコンピュータがわかるように翻訳され私たちの思い通りに実行されています。このことを理解していると、エラーの意味がしやすくなったりしますね。</p>
+<blockquote>
+<p>参考文献
+<a href="https://www.weblio.jp/content/%E3%82%A2%E3%82%BB%E3%83%B3%E3%83%96%E3%83%AA%E8%A8%80%E8%AA%9E">https://www.weblio.jp/content/%E3%82%A2%E3%82%BB%E3%83%B3%E3%83%96%E3%83%AA%E8%A8%80%E8%AA%9E</a> &gt; <a href="https://www.gadgety.net/shin/tips/unix/compiler.html">https://www.gadgety.net/shin/tips/unix/compiler.html</a></p>
+</blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href="https://twitter.com/ritohirade" class="icons d-block">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.facebook.com/hiraderito" class="icons d-block">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://github.com/ritohirade" class="icons d-block">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.behance.net/rittonboy88130" class="icons d-block">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-behance fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://fontawesome.com/icons/pinterest?style=brands" class="icons d-block">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-pinterest fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                  </li>
+                </ul>
+                <p class="text-muted">           
+                    
+                        Copyright &copy; 電脳ブログ 2020
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.2ed44664366c9940537d.min.js"></script>
+        
+    
+
+
+
+
+
+    
+</body>
+</html>
